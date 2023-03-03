@@ -27,6 +27,11 @@ public class Animal {
         this(null);
     }
 
+    @Override
+    public String toString() {
+        return String.format("Имя:%s, Цвет: %s", this.name, this.color);
+    }
+
     public void wakeUP(){
         System.out.println("Woke up..");
     }

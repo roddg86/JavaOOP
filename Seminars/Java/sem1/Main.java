@@ -1,5 +1,8 @@
 package Seminars.Java.sem1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     /**
      *
@@ -25,8 +28,23 @@ public class Main {
         System.out.println(cat1.getType());
 
         Animal cat2 = new Cat("Котик");
-        cat1.speak();
+        cat2.speak();
         animal1.speak();
+
+        List<Animal> animals = new ArrayList<>();
+        animals.add(cat2);
+        animals.add(new Dog("Бобик"));
+        animals.add(new Duck("Дональд"));
+
+        // qq::: - дать ссылку на метод
+        animals.forEach(Animal::speak);
+
+        // вызовем метод полета  приведением типа
+        for (Animal a : animals) {
+            if(a instanceof Duck) ((Duck) a).fly();
+            System.out.println(a);
+        }
+
 
     }
     

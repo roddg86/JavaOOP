@@ -10,4 +10,10 @@ public class Cat extends Animal {
     public Cat(String name) {
         super(name);
     }
+
+    // полиморфизм
+    @Override
+    public void speak() {
+        System.out.println("Meow!");
+    }
 }
