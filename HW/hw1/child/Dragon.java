@@ -2,14 +2,15 @@ package HW.hw1.child;
 
 import HW.hw1.parent.Animal;
 
-public class Bird extends Animal {
-    public Bird(String name, String color) {
+public class Dragon extends Animal {
+
+    public Dragon(String name, String color) {
         super(name, color, 2);
     }
 
     @Override
     public void speak() {
-        System.out.printf("%s speaks: Chirik-Chirik!%n", getType());
+        System.out.printf("%s speaks: Growl-Growl!%n", getType());
     }
 
     public void fly() {

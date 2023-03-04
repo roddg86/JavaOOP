@@ -5,6 +5,12 @@ public class Animal {
     private final String color;
     private int legsCount;
 
+    public Animal(String name, String color, int legsCount) {
+        this.name = name;
+        this.color = color;
+        this.legsCount = legsCount;
+    }
+
     public Animal(String name, String color) {
         this.name = name;
         this.color = color;
