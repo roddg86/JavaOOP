@@ -37,7 +37,7 @@ public class Main {
         Fish fish = new Fish("Амиго", "Желтый");
         fish.speak();
         fish.swim();
-        fish.hunt();
+        fish.hunt(); // проблема
         fish.setName("Pixel"); // проблема
         System.out.printf("Имя %s\n", fish.getName());
         System.out.printf("Цвет %s\n", fish.getColor());
