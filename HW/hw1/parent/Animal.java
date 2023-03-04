@@ -21,36 +21,52 @@ public class Animal {
     }
 
     // todo: Ниже методы, отвечающие за состояние объекта.
-    //  !!!Обратите внимание на разные способы вывода строк в sysout java
+    // !!!Обратите внимание на разные способы вывода строк в sysout java
 
-//    public void wakeUp() {
-//        System.out.println(getType() + ": проснулся");
-//    }
-//
-//    public void findFood() {
-//        String out = String.format("%s: нашел еду%n", getType());
-//        System.out.println(out);
-//    }
-//
-//    public void eat() {
-//        System.out.printf("%s: поел%n", getType());
-//    }
-//
-//    public void toPlay() {
-//        System.out.printf("%s: поиграл%n", getType());
-//    }
-//
-//    public void goToSleep() {
-//        System.out.printf("%s: уснул%n", getType());
-//    }
+    // public void wakeUp() {
+    // System.out.println(getType() + ": проснулся");
+    // }
+    //
+    // public void findFood() {
+    // String out = String.format("%s: нашел еду%n", getType());
+    // System.out.println(out);
+    // }
+    //
+    // public void eat() {
+    // System.out.printf("%s: поел%n", getType());
+    // }
+    //
+    // public void toPlay() {
+    // System.out.printf("%s: поиграл%n", getType());
+    // }
+    //
+    // public void goToSleep() {
+    // System.out.printf("%s: уснул%n", getType());
+    // }
 
     public void speak() {
         System.out.printf("%s: ...%n", getType());
     }
 
-    public void hunt() {}
+    public void toGo(){
+        // двигатся
+        System.out.println("I'm going");
+    }
 
-    //todo: Ниже геттеры и сеттеры. !!! Обратите внимание, не к каждому полю есть сеттер(один из шагов инкапсуляции)
+    public void fly(){
+        // летать
+        System.out.println("I fly");
+    }
+
+    public void swim(){
+        // плавать
+        System.out.println("Swimming");
+    }
+    public void hunt() {
+    }
+
+    // todo: Ниже геттеры и сеттеры. !!! Обратите внимание, не к каждому полю есть
+    // сеттер(один из шагов инкапсуляции)
 
     public String getName() {
         return name;
