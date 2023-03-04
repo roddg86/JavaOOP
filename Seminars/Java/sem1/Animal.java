@@ -32,17 +32,7 @@ public class Animal {
         return String.format("Имя:%s, Цвет: %s", this.name, this.color);
     }
 
-    public void wakeUP(){
-        System.out.println("Woke up..");
-    }
 
-    public void findFood(){
-        System.out.println("Found food..");
-    }
-
-    public void eat(){
-        System.out.println("Eat..");
-    }
 
     public void speak(){
         System.out.println("Speak..");

@@ -36,7 +36,7 @@ public class Main {
         animals.add(new Dog("Бобик"));
         animals.add(new Duck("Дональд"));
 
-        // qq::: - дать ссылку на метод
+        // :: - дать ссылку на метод
         animals.forEach(Animal::speak);
 
         // вызовем метод полета  приведением типа
@@ -45,6 +45,9 @@ public class Main {
             System.out.println(a);
         }
 
+        // логика
+        Cat cat3 = new Cat("Кот с методами");
+        cat3.hunt();
 
     }
     
