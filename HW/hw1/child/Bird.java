@@ -2,6 +2,10 @@ package HW.hw1.child;
 
 import HW.hw1.parent.Animal;
 
+/**
+ * Летающие
+ * Сущность птица
+ */
 public class Bird extends Animal {
     public Bird(String name, String color) {
         super(name, color, 2);
@@ -9,10 +13,10 @@ public class Bird extends Animal {
 
     @Override
     public void speak() {
-        System.out.printf("%s speaks: Chirik-Chirik!%n", getType());
+        System.out.printf("%s говорит: Чирик-Чирик!%n", getType());
     }
 
     public void fly() {
-        System.out.printf("%s flew!%n", getType());
+        System.out.printf("%s летал!%n", getType());
     }
 }

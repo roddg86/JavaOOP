@@ -56,17 +56,17 @@ public class Animal {
 
     public void toGo(){
         // двигатся
-        System.out.println("I'm going");
+        System.out.println("Бежит");
     }
 
     public void fly(){
         // летать
-        System.out.println("I fly");
+        System.out.println("Полетел");
     }
 
     public void swim(){
         // плавать
-        System.out.println("Swimming");
+        System.out.println("Поплыл");
     }
     public void hunt() {
     }
