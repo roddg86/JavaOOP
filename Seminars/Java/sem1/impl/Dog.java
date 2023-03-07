@@ -1,4 +1,6 @@
-package Seminars.Java.sem2;
+package Seminars.Java.sem1.impl;
+
+import Seminars.Java.sem1.Animal;
 
 public class Dog extends Animal {
     public Dog(String name, String color) {

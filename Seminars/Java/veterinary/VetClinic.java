@@ -1,6 +1,6 @@
-package Seminars.Java.sem2.veterinary;
+package Seminars.Java.veterinary;
 
-import Seminars.Java.sem2.Animal;
+import Seminars.Java.sem1.Animal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,5 +28,9 @@ public class VetClinic {
     public VetClinic() {
         // инициализация поля в конструкторе, является хорошим тоном
         this.animals = new ArrayList<>();
+    }
+
+    public List<Animal> getAnimals() {
+        return animals;
     }
 }

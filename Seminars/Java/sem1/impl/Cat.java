@@ -1,6 +1,14 @@
-package Seminars.Java.sem2;
+package Seminars.Java.sem1.impl;
 
-public class Cat extends Animal {
+import Seminars.Java.sem1.Animal;
+import Seminars.Java.sem1.Illable;
+
+import java.io.Serializable;
+
+/**
+ * Сущность кот реализует функционал абстрактного класса животное, и реализует способность из интерфейса Заболеть
+ */
+public class Cat extends Animal implements Illable, Serializable {
 
     // вызвать конструктор родителя
     public Cat(String name, String color) {
@@ -14,7 +22,7 @@ public class Cat extends Animal {
     // Инкапсуляция
     // на примере метода hunt
     // соблюдение порядка вызова методов
-    // невозможно нарушить поряд вызова методов они инкапсулированы и приватные
+    // невозможно нарушить порядок вызова методов они инкапсулированы и приватные
     public void hunt(){
         wakeUP();
         findFood();
@@ -39,5 +47,13 @@ public class Cat extends Animal {
 
     private void eat(){
         System.out.println("Eat..");
+    }
+
+    @Override
+    public void getIll() {
+        /**
+         * метод Заболел
+         */
+            System.out.printf("%s заболел%n", this.getType());
     }
 }

@@ -1,18 +1,12 @@
 package Seminars.Java.sem2;
 
-public class Human extends Animal{
+import Seminars.Java.sem1.Animal;
+import Seminars.Java.sem1.Illable;
 
-    public Human(String name) {
-        super(name);
-    }
-
-    @Override
-    public void speak() {
-
-    }
+public class Human implements Illable {
 
     @Override
-    public void hunt() {
+    public void getIll() {
 
     }
 }
