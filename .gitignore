@@ -45,7 +45,8 @@ gradle-app.setting
 # Eclipse Gradle plugin generated files
 # Eclipse Core
 .project
-# JDT-specif
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
