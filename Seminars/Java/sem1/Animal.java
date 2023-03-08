@@ -9,16 +9,30 @@ public abstract class Animal {
     private String color;
     private int pawsCount;
 
+    /**
+     * поле для подсчета сколько наследников у класса Animal
+     * @see animalsCount это счетчик всегда создается с нуля
+     */
+    private static int animalsCount = 0;
+
     public String getType(){
         // метод присылает строчку энимал
         return this.getClass().getSimpleName();
     }
 
-    // конструктор класса, главный конструктор
+    /**
+     * Конструктор класса, главный конструктор
+     *
+     * @param name имя животного
+     * @param color цвет животного
+     * @param pawsCount количество ног
+     * @see animalsCount количество животных в программе
+     */
     public Animal(String name, String color, int pawsCount) {
         this.name = name;
         this.color = color;
         this.pawsCount = pawsCount;
+        animalsCount++;
     }
 
     // конструктор вызывающий главный конструктор
@@ -69,5 +83,14 @@ public abstract class Animal {
 
     public void setPawsCount(int pawsCount) {
         this.pawsCount = pawsCount;
+    }
+
+    /**
+     * Метод подсчета количества наследников класса Animal
+     * @return возвращает количество наследников класса Animal
+     *
+     */
+    public static int getAnimalsCount(){
+        return animalsCount;
     }
 }

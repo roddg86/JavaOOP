@@ -19,28 +19,30 @@ public class Main {
     public static void main(String[] args) {
         VetClinic vetClinic = new VetClinic();
         vetClinic
-                .addAnimal(new Cat("РњСѓСЂР·РёРє"))
-                .addAnimal(new Dog("Р‘РѕР±РёРє"))
-                .addAnimal(new Duck("Р”РѕРЅР°Р»СЊРґ"));
+                .addAnimal(new Cat("Мурзик"))
+                .addAnimal(new Dog("Бобик"))
+                .addAnimal(new Duck("Дональд"));
 
         /**
-         * РЎРїРёСЃРѕРє РґР»СЏ РЅР°СЃР»РµРґРЅРёРєРѕРІ РёРЅС‚РµСЂС„РµР№СЃР° Illable(СЃРїРѕСЃРѕР±РЅС‹С… Р·Р°Р±РѕР»РµС‚СЊ)
+         * Список для наследников интерфейса Illable(способных заболеть)
          */
         List<Illable> illables = new ArrayList<>();
-        illables.add(new Cat("Р‘Р°СЂСЃРёРє"));
+        illables.add(new Cat("Барсик"));
         illables.add(new Human());
 
         /**
-         * РЎРїРёСЃРѕРє РґР»СЏ РЅР°СЃР»РµРґРЅРёРєРѕРІ РёРЅС‚РµСЂС„РµР№СЃР° Flyable(СѓРјРµСЋС‰РёС… Р»РµС‚Р°С‚СЊ)
+         * Список для наследников интерфейса Flyable(умеющих летать)
          */
         List<Flyable> flyables = new ArrayList<>();
         flyables.add(new Eagle());
         flyables.add(new Duck("Donald"));
 
-        // Р’С‹РІРµРґРµРј СЃРєРѕСЂРѕСЃС‚СЊ
+        // Выведем скорость
         for (Flyable f : flyables
              ) {
             System.out.println(f.getFlightSpeed());
         }
+
+        System.out.printf("Количество наследников класса Animal = %d", Animal.getAnimalsCount());
     }
 }
