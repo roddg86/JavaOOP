@@ -6,6 +6,9 @@ import com.github.roddg86.parent.Runnable;
 
 import java.io.Serializable;
 
+/**
+ * Сущьность кот
+ */
 public class Cat extends Animal implements Runnable, Illable, Serializable, Huntable, Speakable {
     public Cat(String name, String color) {
         super(name, color, 4);

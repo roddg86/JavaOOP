@@ -6,6 +6,9 @@ import com.github.roddg86.parent.Flyable;
 
 import java.io.Serializable;
 
+/**
+ * Сущьность утка
+ */
 public class Duck extends Animal implements Flyable, Serializable {
     public Duck(String name, String color) {
         super(name, color, 2);

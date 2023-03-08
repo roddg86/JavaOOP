@@ -6,7 +6,10 @@ import com.github.roddg86.parent.Treatable;
 
 import java.io.Serializable;
 
-public class Human extends Doctor implements Treatable, Serializable, Speakable {
+/**
+ * Сущьность человек
+ */
+public class Human extends Doctor implements Treatable, Speakable {
 
     /**
      * Конструктор класса

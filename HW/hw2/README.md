@@ -14,7 +14,8 @@
 ---
 
 >Проект открываетя начиная с папки hw2, иначе не работает build.gradle
-
+> 
+![open.png](src%2Fmain%2Fresources%2Fimg%2Fopen.png)
 ---
 
 Вопросы:
