@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
+group 'com.github.roddg86'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -14,10 +14,6 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.26'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-
-
-
-
 }
 
 test {
