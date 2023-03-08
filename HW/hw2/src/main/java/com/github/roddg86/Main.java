@@ -22,7 +22,12 @@ public class Main {
         //vetClinic.getFlyable().forEach(System.out::println);
         //vetClinic.getSerializable().forEach(System.out::println);
         //vetClinic.getSpeakable().forEach(System.out::println);
-        vetClinic.getSerializable().forEach(System.out::println);
+        //vetClinic.getSerializable().forEach(System.out::println);
+
+        for (int i = 0; i < vetClinic.getAnimals().size(); i++) {
+            System.out.print(vetClinic.getAnimals().get(i).getName() + " ");
+        }
+        System.out.println();
 
         Human human = new Human("Айболит", 5);
         human.speak();
