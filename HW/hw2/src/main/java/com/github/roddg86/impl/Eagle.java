@@ -6,7 +6,6 @@ import com.github.roddg86.parent.Flyable;
 import com.github.roddg86.parent.Huntable;
 import com.github.roddg86.parent.Illable;
 
-
 /**
  * Сущность Орел
  */
@@ -34,9 +33,8 @@ public class Eagle extends Animal implements Flyable, Illable, Huntable, Clinic 
 
     @Override
     public void toFly() {
-            System.out.printf("%s Полетел!%n", this.getType());
+        System.out.printf("%s Полетел!%n", this.getType());
     }
-
 
     /**
      * пришел из интерфейса Illable
@@ -56,38 +54,31 @@ public class Eagle extends Animal implements Flyable, Illable, Huntable, Clinic 
         System.out.printf("%s Сделана перевязка!%n", this.getType());
     }
 
+    /**
+     * Метод вызывает другие метода попорядку, чтобы невозможно было нарушить порядок
+     */
     @Override
-    public void hunt() {
+    public void toHunt() {
         wakeUp();
         findFood();
         eat();
-        toPlay();
         goToSleep();
     }
 
-    @Override
-    public void wakeUp() {
+    private void wakeUp() {
         System.out.println(getType() + ": проснулся");
     }
 
-    @Override
-    public void findFood() {
+    private void findFood() {
         String out = String.format("%s: нашел еду%n", getType());
         System.out.println(out);
     }
 
-    @Override
-    public void eat() {
+    private void eat() {
         System.out.printf("%s: поел%n", getType());
     }
 
-    @Override
-    public void toPlay() {
-        System.out.printf("%s: поиграл%n", getType());
-    }
-
-    @Override
-    public void goToSleep() {
+    private void goToSleep() {
         System.out.printf("%s: уснул%n", getType());
     }
 }
