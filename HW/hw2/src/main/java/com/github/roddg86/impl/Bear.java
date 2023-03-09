@@ -1,16 +1,16 @@
 package com.github.roddg86.impl;
 
+
 import com.github.roddg86.parent.Animal;
+import com.github.roddg86.parent.Clinic;
 import com.github.roddg86.parent.Illable;
 import com.github.roddg86.parent.Runnable;
-
-import java.io.Serializable;
 
 /**
  * Бегающие
  * Сущность медведь
  */
-public class Bear extends Animal implements Runnable, Illable, Serializable {
+public class Bear extends Animal implements Runnable, Illable, Clinic {
     public Bear(String name, String color) {
         super(name, color, 4);
     }

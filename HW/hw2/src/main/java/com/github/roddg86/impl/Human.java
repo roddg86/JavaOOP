@@ -4,8 +4,6 @@ import com.github.roddg86.parent.Doctor;
 import com.github.roddg86.parent.Speakable;
 import com.github.roddg86.parent.Treatable;
 
-import java.io.Serializable;
-
 /**
  * Сущьность человек
  */

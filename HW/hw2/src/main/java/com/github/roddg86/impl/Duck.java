@@ -2,14 +2,14 @@ package com.github.roddg86.impl;
 
 
 import com.github.roddg86.parent.Animal;
+import com.github.roddg86.parent.Clinic;
 import com.github.roddg86.parent.Flyable;
 
-import java.io.Serializable;
 
 /**
  * Сущьность утка
  */
-public class Duck extends Animal implements Flyable, Serializable {
+public class Duck extends Animal implements Flyable, Clinic {
     public Duck(String name, String color) {
         super(name, color, 2);
     }

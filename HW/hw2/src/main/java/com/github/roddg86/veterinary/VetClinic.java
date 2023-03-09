@@ -44,11 +44,11 @@ public class VetClinic {
      * Метод получает всех кто есть в клинике включая людей
      * @return список присутствующих в клинике
      */
-    public List<Serializable> getSerializable(){
-        List<Serializable> result = new ArrayList<>();
+    public List<Clinic> getClinic(){
+        List<Clinic> result = new ArrayList<>();
         for (Animal animal: getAnimals()){
-            if(animal instanceof Serializable){
-                result.add((Serializable) animal);
+            if(animal instanceof Clinic){
+                result.add((Clinic) animal);
             }
         }
         return result;

@@ -1,15 +1,17 @@
 package com.github.roddg86.impl;
 
 
-import com.github.roddg86.parent.*;
+import com.github.roddg86.parent.Animal;
+import com.github.roddg86.parent.Clinic;
+import com.github.roddg86.parent.Huntable;
+import com.github.roddg86.parent.Illable;
 import com.github.roddg86.parent.Runnable;
-
-import java.io.Serializable;
+import com.github.roddg86.parent.Speakable;
 
 /**
  * Сущьность кот
  */
-public class Cat extends Animal implements Runnable, Illable, Serializable, Huntable, Speakable {
+public class Cat extends Animal implements Runnable, Illable, Huntable, Speakable, Clinic {
     public Cat(String name, String color) {
         super(name, color, 4);
     }

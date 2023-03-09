@@ -1,16 +1,16 @@
 package com.github.roddg86.impl;
 
 import com.github.roddg86.parent.Animal;
+import com.github.roddg86.parent.Clinic;
 import com.github.roddg86.parent.Flyable;
 import com.github.roddg86.parent.Huntable;
 import com.github.roddg86.parent.Illable;
 
-import java.io.Serializable;
 
 /**
  * Сущность Орел
  */
-public class Eagle extends Animal implements Flyable, Illable, Serializable, Huntable {
+public class Eagle extends Animal implements Flyable, Illable, Huntable, Clinic {
 
     public Eagle(String name, String color) {
         super(name, color, 2);
