@@ -3,7 +3,6 @@ package com.github.roddg86.veterinary;
 import com.github.roddg86.parent.*;
 import com.github.roddg86.parent.Runnable;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
