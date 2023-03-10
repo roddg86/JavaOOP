@@ -39,14 +39,4 @@ public class Bear extends Animal implements Runnable, Illable, Clinic {
     public void getIll() {
 
     }
-
-    @Override
-    public void vaccination() {
-
-    }
-
-    @Override
-    public void bandaging() {
-
-    }
 }

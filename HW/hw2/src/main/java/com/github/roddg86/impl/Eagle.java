@@ -44,16 +44,6 @@ public class Eagle extends Animal implements Flyable, Illable, Huntable, Clinic 
 
     }
 
-    @Override
-    public void vaccination() {
-        System.out.printf("%s Поставлен укол!%n", this.getType());
-    }
-
-    @Override
-    public void bandaging() {
-        System.out.printf("%s Сделана перевязка!%n", this.getType());
-    }
-
     /**
      * Метод вызывает другие метода попорядку, чтобы невозможно было нарушить порядок
      */

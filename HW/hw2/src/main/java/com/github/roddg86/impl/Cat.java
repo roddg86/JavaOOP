@@ -39,16 +39,6 @@ public class Cat extends Animal implements Runnable, Illable, Huntable, Speakabl
         System.out.printf("%s Я бегу!%n", getType());
     }
 
-    @Override
-    public void vaccination() {
-        System.out.printf("%s Поставлен укол!%n", this.getType());
-    }
-
-    @Override
-    public void bandaging() {
-        System.out.printf("%s Сделана перевязка!%n", this.getType());
-    }
-
     /**
      * Метод вызывает другие метода попорядку, чтобы невозможно было нарушить порядок
      */

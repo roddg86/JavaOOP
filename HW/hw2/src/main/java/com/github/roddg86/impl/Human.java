@@ -20,13 +20,8 @@ public class Human extends Doctor implements Treatable, Speakable {
     }
 
     @Override
-    public void vaccination() {
-        System.out.printf("%s Ставлю прививку!%n", this.getType());
-    }
-
-    @Override
-    public void bandaging() {
-        System.out.printf("%s Делаю перевязку!%n", this.getType());
+    public void treat(){
+        System.out.printf("%s Лечу!%n", this.getType());
     }
 
     @Override
