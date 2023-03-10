@@ -13,9 +13,6 @@ public abstract class Animal {
     @ToString.Include(name = "Количество ног")
     private int legsCount;
 
-    //поле вылечить
-    private boolean isIll;
-
     /**
      * поле для подсчета сколько наследников у класса Animal
      * @see animalsCount это счетчик всегда создается с нуля
