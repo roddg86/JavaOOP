@@ -1,13 +1,14 @@
 package com.github.roddg86.impl;
 
 import com.github.roddg86.parent.Doctor;
+import com.github.roddg86.parent.Runnable;
 import com.github.roddg86.parent.Speakable;
 import com.github.roddg86.parent.Treatable;
 
 /**
  * Сущьность человек
  */
-public class Human extends Doctor implements Treatable, Speakable {
+public class Human extends Doctor implements Treatable, Speakable, Runnable {
 
     /**
      * Конструктор класса
@@ -27,5 +28,17 @@ public class Human extends Doctor implements Treatable, Speakable {
     @Override
     public void speak() {
             System.out.printf("%s: Следующий пациент на прием!%n", getType());
+    }
+
+    @Override
+    public int getRunSpeed() {
+        int runSpeed = 5;
+        System.out.printf("%s Скорость ходьбы: %d%n", this.getType(), runSpeed);
+        return runSpeed;
+    }
+
+    @Override
+    public void toGo() {
+        System.out.printf("%s Я иду%n", getType());
     }
 }
