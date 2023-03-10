@@ -60,15 +60,15 @@ public class Cat extends Animal implements Runnable, Illable, Huntable, Speakabl
         System.out.println(out);
     }
 
-    public void eat() {
+    private void eat() {
         System.out.printf("%s: поел%n", getType());
     }
 
-    public void toPlay() {
+    private void toPlay() {
         System.out.printf("%s: поиграл%n", getType());
     }
 
-    public void goToSleep() {
+    private void goToSleep() {
         System.out.printf("%s: уснул%n", getType());
     }
 

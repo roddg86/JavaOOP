@@ -71,15 +71,14 @@ public class Bear extends Animal implements Runnable, Illable, Huntable, Swimabl
     }
 
     private void findFood() {
-        String out = String.format("%s: нашел еду%n", getType());
-        System.out.println(out);
+        String out = String.format("%s: поохотился%n", getType());
     }
 
-    public void eat() {
+    private void eat() {
         System.out.printf("%s: поел%n", getType());
     }
 
-    public void goToSleep() {
+    private void goToSleep() {
         System.out.printf("%s: уснул%n", getType());
     }
 }

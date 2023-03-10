@@ -24,6 +24,11 @@ public class Main {
         //vetClinic.getSpeakable().forEach(System.out::println);
         //vetClinic.getClinic().forEach(System.out::println);
 
+        Bear bear = new Bear("Медведь");
+        bear.toHunt();
+
+
+
         for (int i = 0; i < vetClinic.getAnimals().size(); i++) {
             System.out.print(vetClinic.getAnimals().get(i).getName() + " ");
         }
