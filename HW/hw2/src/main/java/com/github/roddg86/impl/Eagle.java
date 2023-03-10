@@ -5,11 +5,13 @@ import com.github.roddg86.parent.Clinic;
 import com.github.roddg86.parent.Flyable;
 import com.github.roddg86.parent.Huntable;
 import com.github.roddg86.parent.Illable;
+import com.github.roddg86.parent.Runnable;
+import com.github.roddg86.parent.Speakable;
 
 /**
  * Сущность Орел
  */
-public class Eagle extends Animal implements Flyable, Illable, Huntable, Clinic {
+public class Eagle extends Animal implements Flyable, Illable, Huntable, Runnable, Speakable, Clinic {
 
     public Eagle(String name, String color) {
         super(name, color, 2);
@@ -70,5 +72,22 @@ public class Eagle extends Animal implements Flyable, Illable, Huntable, Clinic 
 
     private void goToSleep() {
         System.out.printf("%s: уснул%n", getType());
+    }
+
+    @Override
+    public int getRunSpeed() {
+        int runSpeed = 20;
+        System.out.printf("%s Скорость бега: %d%n", this.getType(), runSpeed);
+        return runSpeed;
+    }
+
+    @Override
+    public void toGo() {
+        System.out.printf("%s Я бегу%n", getType());
+    }
+
+    @Override
+    public void speak() {
+        System.out.printf("%s: Крик орла!!%n", getType());
     }
 }

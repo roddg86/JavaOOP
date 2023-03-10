@@ -31,8 +31,7 @@ public class Main {
 
         Human human = new Human("Айболит", 5);
         human.speak();
-        human.vaccination();
-        human.bandaging();
+        human.treat();
 
         /**
          * Список для наследников интерфейса Illable(способных заболеть)
@@ -44,9 +43,8 @@ public class Main {
         //Выведем тех кто заболел
         for (Illable illable : illables
         ) {
-            illable.vaccination();
-            illable.bandaging();
-            //illable.getRunSpeed();
+            
+            illable.getIll();;
         }
 
         /**
